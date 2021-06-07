@@ -1,19 +1,19 @@
 variable "bucket_name" {
   type        = string
-  description = "Should be the bucket name"
-  default     = ""
+  description = "S3 bucket name"
+  default     = "portfoliobuild.jeffhaineault.info"
 }
 
 variable "route53_domain" {
   type        = string
   description = "Route53 hostedzone"
-  default     = ""
+  default     = "portfolio.jeffhaineault.info"
 }
 
 variable "domain" {
   type        = string
   description = "site where route53 hosted zone and bucket name are same."
-  default     = ""
+  default     = "portfolio.jeffhaineault.info"
 }
 
 variable "s3_force_destroy" {
@@ -34,8 +34,3 @@ variable "error_document" {
   default     = "error.html"
 }
 
-variable "secret_user_agent" {
-  type        = string
-  description = "secret to authenticate CF requests to s3"
-  default     = "SECRET-STRING"
-}
