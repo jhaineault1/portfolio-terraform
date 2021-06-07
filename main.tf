@@ -6,4 +6,4 @@ module "website" {
 # To create the resource,
 terraform apply  
 # To upload the static assests,
-aws s3 sync build/ s3://portfolio.jeffhaineault.info
+aws s3 sync build/ s3:portfolio.jeffhaineault.info
