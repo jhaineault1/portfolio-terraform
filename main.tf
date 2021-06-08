@@ -1,4 +1,4 @@
-module "portfolio-terraform" {
+module "consul" {
   source  = "github.com/jhaineault1/portfolio-terraform.git"
   domain = "portfolio.jeffhaineault.info"
 }
