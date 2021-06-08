@@ -4,4 +4,4 @@ module "portfolio-terraform" {
 }
 terraform apply
 
-aws s3 sync build/ s3:portfolio.jeffhaineault.info
+aws s3 sync build/ s3:jeffhaineault.info.s3-website.us-east-2.amazonaws.com/
